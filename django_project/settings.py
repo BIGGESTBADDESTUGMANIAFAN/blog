@@ -128,3 +128,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Login redirect
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
+
+# TODO: this is def bad in production settings
+CSRF_TRUSTED_ORIGINS = ["https://localhost:8000"]
